@@ -13,18 +13,26 @@ No es obligatorio pero es recomendable tener una formación previa en alguna car
 
 ### Organización Del Módulo
 
- - [Sesión 1: Fundamentos de Node.js](./Sesion-01)
+ - [Sesión 1: Scope, this y ECMAScript6](./Sesion-01)
 
- - [Sesión 2: Modulos esenciales](./Sesion-02)
+ - [Sesión 2: Webpack](./Sesion-02)
 
- - [Sesión 3: Javascript asíncrono en NodeJS](./Sesion-03)
+ - [Sesión 3: Babel](./Sesion-03)
 
- - [Sesión 4: Desarrollo de Aplicaciones CLI](./Sesion-04)
+ - [Sesión 4: Testing con Jest](./Sesion-04)
 
- - [Sesión 5: Desarrollo de aplicaciones Web](./Sesion-05)
+ - [Sesión 5: Fundamentos de Node.js](./Sesion-05)
 
- - [Sesión 6: Desarrolo de API RESTful I](./Sesion-06)
+ - [Sesión 6: Módulos Esenciales](./Sesion-06)
 
- - [Sesión 7: Desarrolo de API RESTful I](./Sesion-07)
+ - [Sesión 7: Javascript asíncrono en NodeJS](./Sesion-07)
 
- - [Sesión 8: Desarrolo de API RESTful I](./Sesion-08)
+ - [Sesión 8: Desarrollo de Aplicaciones CLI](./Sesion-08)
+ 
+ - [Sesión 9: Desarrollo de Aplicaciones Web](./Sesion-09)
+
+ - [Sesión 10: Desarrollo de API RESTful I](./Sesion-10)
+
+ - [Sesión 10: Desarrollo de API RESTful II](./Sesion-11)
+ 
+ - [Sesión 10: Desarrollo de API RESTful III](./Sesion-12)
