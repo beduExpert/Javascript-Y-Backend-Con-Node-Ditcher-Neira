@@ -33,6 +33,6 @@ No es obligatorio pero es recomendable tener una formación previa en alguna car
 
  - [Sesión 10: Desarrollo de API RESTful I](./Sesion-10)
 
- - [Sesión 10: Desarrollo de API RESTful II](./Sesion-11)
+ - [Sesión 11: Desarrollo de API RESTful II](./Sesion-11)
  
- - [Sesión 10: Desarrollo de API RESTful III](./Sesion-12)
+ - [Sesión 12: Desarrollo de API RESTful III](./Sesion-12)
