@@ -28,6 +28,8 @@ Diferenciar scope global de local y cómo this cambia dependiendo del execution 
 
   - [Ejemplo 1: Scope y This ](./Ejemplo-01/Readme.md)
 
+  - [Reto 1: Custom logger](./Reto-01)
+
 - **[¿Qué es ECMAScript 6?](#qué-es-ecmascript-6)**
 
 - **[`let` y `const`](#let-y-const)**
@@ -41,8 +43,12 @@ Diferenciar scope global de local y cómo this cambia dependiendo del execution 
 - **[Destructuring](#destructuring)**
 
   - [Ejemplo 2: ES6 Strings, Destructuring, Spread Operator. ](./Ejemplo-02/Readme.md)
+
+  - [Reto 2: Intercambiar variables](./Reto-02/Readme.md)
   
   - [Ejemplo 3: ES6 Arrow Function. ](./Ejemplo-03/Readme.md)
+
+  - [Reto ·: Crear un número de teléfono](./Reto-03/Readme.md)
 
 - **[Postwork](./Postwork/Readme.md)**
 ---
