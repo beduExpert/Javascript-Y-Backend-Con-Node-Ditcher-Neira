@@ -140,7 +140,6 @@ Mientras que en un ambiente de Node.js `this` hace referencia al objeto `global`
 
 ![This in Node.js](./assets/this-node.png)
 
-#### 🕵 [Ejemplo 2: `this` como método](./Ejemplo-02)
 
 ---
 
@@ -350,8 +349,6 @@ console.log(yellow); // Yellow
 En este ejemplo estamos creando 3 variables (`red`, `blue` y `yellow`) y asignando los valores del arreglo `colors`.
 Esta asignación se hace en base al index del arreglo.
 
-#### 💻 [Reto 1: Intercambiar variables](./Reto-01/Readme.md)
-
 ```javascript
 const person = {
   firstName: 'John',
@@ -393,3 +390,6 @@ Las funciones de flecha o arrow functions es otra de las novedades de esta versi
 Veamos como funcionan y cual es su sintaxis de las Arrow functions en el siguiente ejemplo :
 
 #### 🕵 [Ejemplo 3: Arrow functions ](./Ejemplo-03/Readme.md)
+
+
+#### 🛡 [Postwork](./Postwork/Readme.md)
