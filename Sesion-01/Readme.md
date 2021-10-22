@@ -2,7 +2,7 @@
 
 ---
 
-# Sesión 1:  _Scope_  _this_  _ECMAScript 6_
+# Sesión 1: _Scope_ _,_ _This_ _y_ _ECMAScript 6_.
 
 🎯 **Objetivos:**
 
@@ -41,6 +41,8 @@ Diferenciar scope global de local y cómo this cambia dependiendo del execution 
 - **[Destructuring](#destructuring)**
 
   - [Ejemplo 2: ES6 Strings, Destructuring, Spread Operator. ](./Ejemplo-02/Readme.md)
+  
+  - [Ejemplo 3: ES6 Arrow Function. ](./Ejemplo-03/Readme.md)
 
 - **[Postwork](./Postwork/Readme.md)**
 ---
