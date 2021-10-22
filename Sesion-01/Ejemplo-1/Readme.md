@@ -2,12 +2,13 @@
 
 ---
 
-## Ejemplo 1: Sentencias de bloque
+## Ejemplo 1: Scope y This 
 
-### Objetivo
-
-Diferenciar el scope local de una función con el scope de condicionales y ciclos.
-
+### Objetivos
+1.- Diferenciar el scope local de una función con el scope de condicionales y ciclos.
+2.- Diferenciar el valor de `this` en una función y en un método
+3.- Implementar el método `call` para cambiar el contexto de `this`
+### Objetivo 1 Sentencias de bloque
 #### Requisitos
 
 En una nueva carpeta vamos a crear un archivo `HTML` en blanco llamado `index.html`:
@@ -84,11 +85,9 @@ adelante en el código si usamos `i` nuevamente pensando que no tiene ningún va
 
 ---
 
-## This como metodo
 
-### Objetivo
 
-Diferenciar el valor de `this` en una función y en un método
+### Objetivo 2 This como metodo
 
 #### Requisitos
 
@@ -97,7 +96,6 @@ vamos a crear un archivo `Js` en blanco llamado `this.js`:
 ```html
    <script type="text/javascript" src="./this.js"></script>
 ```
-
 #### Desarrollo
 
 Ya vimos que por default `this` hace referencia a la global `window`.
@@ -141,11 +139,11 @@ lo contiene, en este caso el objeto `foo`.
 
 ---
 
-##  Usando `call`
 
-### Objetivo
 
-Implementar el método `call` para cambiar el contexto de `this`
+### Objetivo 3 Usando  `call`
+
+
 
 #### Requisitos
 

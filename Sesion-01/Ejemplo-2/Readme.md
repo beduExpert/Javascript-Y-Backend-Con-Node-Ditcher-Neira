@@ -2,7 +2,7 @@
 
 ---
 
-##  ES6
+##  ES6 : Strings, Destructuring, Spread Operator.
 
 ### Objetivos
 

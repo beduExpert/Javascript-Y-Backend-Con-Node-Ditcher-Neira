@@ -26,6 +26,8 @@ Diferenciar scope global de local y cómo this cambia dependiendo del execution 
 
 - **[Cambiar el contexto de `this`](#cambiar-el-contexto-de-this)**
 
+ - [Ejemplo 1: Scope y This ](./Ejemplo-01/Readme.md)
+
 - **[¿Qué es ECMAScript 6?](#qué-es-ecmascript-6)**
 
 - **[`let` y `const`](#let-y-const)**
@@ -37,6 +39,8 @@ Diferenciar scope global de local y cómo this cambia dependiendo del execution 
 - **[Copiar iterables](#copiar-iterables)**
 
 - **[Destructuring](#destructuring)**
+
+  - [Ejemplo 2: ES6 Strings, Destructuring, Spread Operator. ](./Ejemplo-02/Readme.md)
 
 - **[Postwork](./Postwork/Readme.md)**
 ---
@@ -201,7 +205,7 @@ var showName = john.logName.bind(jane);
 
 showName(); // Name: Jane Doe
 ```
-
+#### 🕵 [Ejemplo 1: Scope y This](./Ejemplo-01/Readme.md)
 
 ## ¿Qué es ECMAScript 6?
 
@@ -369,3 +373,5 @@ console.log(firstName, lastName); // John Doe
 Las llaves del lado izquierdo del `=` no son un objeto. Esta es la sintaxis de object destructuring. Estamos creando dos
 nuevas variables `firstName` y `lastName`, después estamos extrayendo dos propiedades de `person` con el mismo nombre de
 las variables, el valor de esas propiedades es el que se asigna a las variables creadas.
+
+#### 🕵 [Ejemplo 2: ES6 Strings, Destructuring, Spread Operator. ](./Ejemplo-02/Readme.md)
