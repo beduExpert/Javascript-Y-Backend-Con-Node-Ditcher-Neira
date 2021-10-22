@@ -5,6 +5,13 @@
 
 Diferenciar Scope de Context y entender a detalle el Execution Context
 
+Implementar _for...of_ sobre iterables.
+
+Diferenciar el uso de arrow functions sobre funciones regulares.
+
+## _Scope de Context_
+
+Diferenciar Scope de Context y entender a detalle el Execution Context
 ### Desarrollo
 
 Scope, Context y Execution Context son conceptos que muy fácilmente se confunden entre sí por lo que es bastante 
@@ -72,7 +79,7 @@ entonces `this` apunta al objeto que está llamando el método.
 Es importante tomar en cuenta que a `this` no se le asigna valor alguno hasta que la función que lo define es ejecutada. 
 
 
-### Objetivos
+##  _for...of_
 
 Implementar _for...of_ sobre iterables.
 
@@ -204,7 +211,7 @@ function sum(array) {
 </details>
 
 
-### Objetivos
+## _Arrow functions_
 
 Diferenciar el uso de arrow functions sobre funciones regulares.
 
