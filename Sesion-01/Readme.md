@@ -2,7 +2,7 @@
 
 ---
 
-# Sesión 1: Entendiendo el _scope_ y _this_
+# Sesión 1:  _scope_  _this_  _ECMAScript 6_
 
 🎯 **Objetivos:**
 
@@ -12,29 +12,7 @@ Diferenciar scope global de local y cómo this cambia dependiendo del execution 
 
 ## 💻 Tabla de Contenidos
 
-- **[¿Qué es scope?](#qué-es-scope)**
 
-- **[Scope global](#scope-global)**
-
-- **[Scope local](#scope-local)**
-
-  - [Ejemplo 1: Sentencias de bloque](./Ejemplo-01)
-
-- **[Execution context](#execution-context)**
-
-- **[¿Cuál es el valor de `this`?](#cuál-es-el-valor-de-this)**
-
-  - [Ejemplo 2: `this` como método](./Ejemplo-02)
-
-- **[`this` en nuevas instancias](#this-en-nuevas-instancias)**
-
-- **[Cambiar el contexto de `this`](#cambiar-el-contexto-de-this)**
-  
-  - [Ejemplo 3: Usando `call`](./Ejemplo-03)
-
-  - [Reto 1: Custom logger](./Reto-01)
-
-- **[Postwork](./Postwork/Readme.md)**
 
 ---
 
@@ -91,10 +69,6 @@ console.log(name); // Uncaught ReferenceError: name is not defined
 Sentencias de control de flujo y bucles como `if/else`, `switch`, `for` o `while` no crean un nuevo
 scope como lo hacen las funciones. Cualquier variable declarada dentro de estos bloques tendrá el mismo 
 scope donde se declaró la sentencia.
-
-#### 🕵  [Ejemplo 1: Sentencias de bloque](./Ejemplo-01)
-
----
 
 ## Execution context
 
@@ -204,8 +178,170 @@ var showName = john.logName.bind(jane);
 showName(); // Name: Jane Doe
 ```
 
-#### 🕵 [Ejemplo 3: Usando `call`](./Ejemplo-03)
 
-#### 💻 [Reto 1: Custom logger](./Reto-01)
+## ¿Qué es ECMAScript 6?
 
-#### 🛡 [Postwork](./Postwork/Readme.md)
+Ecma International es una organización sin ánimos de lucro encargada de regular el funcionamiento de
+varios estándares en la industria de la computación. Así surge ECMAScript 1 (ES1) en 1997 como la primera
+versión del estándar de JavaScript. Normalmente se usa el término ECMAScript para referirse al estándar
+y JavaScript para hablar del lenguaje en la práctica.
+
+En 2009 se lanzó ECMAScript 5 (ES5) con muchas mejoras de las versiones anteriores. Sin embargo, a los
+navegadores les tomó varios años ser compatibles con esta versión.
+
+En 2015 surge ECMAScript 2015, que también se le conoce como ES6 o ES2015. A partir de este año se decide
+lanzar una nueva versión de manera anual cambiando el número del año en cada versión, es decir, ES2016, 
+ES2017, ES2018, etc.
+
+Actualmente la versión ES5 es compatible con todos los navegadores. La versión ES6 es compatible con 
+navegadores modernos. Se puede usar la mayoría de las características de ES6 mediante un proceso de 
+transpiling y polyfilling que convierte el código en ES5, garantizando así la compatibilidad del código
+en navegadores viejos.
+
+---
+
+## `let` y `const`
+
+ES6 introduce dos nuevas formas de crear variables con `let` y `const`. La principal diferencia entre `var` y `let` es el scope. 
+
+`let` a diferencia de `var` tiene un scope de bloque, es decir, las variables creadas con `let` solo son accesibles dentro del bloque en el que fueron declaradas.
+
+En JavaScript todas las variables son inicializadas con `undefined` al momento de su creación.
+
+```javascript
+console.log(name); // undefined
+
+var name = "John Doe";
+```
+
+Esta es otra diferencia entre `let` y `var`. Si se trata de acceder a una variable con `let` antes de ser declarada 
+obtenemos un `ReferenceError` en lugar de `undefined`.
+
+```javascript
+console.log(name); // ReferenceError: name is not defined
+
+let name = "John Doe";
+```
+
+`const` es muy similar a `let`, la única diferencia es que una vez asignado un valor a una variable ya no se puede 
+reasignar.
+
+```javascript
+let name = 'John Doe';
+const email = 'john@doe.com';
+
+name = 'Jane Doe';
+email = 'jane@doe.com'; // TypeError: Assignment to constant variable.
+```
+
+Algo muy importante es que declarar una variable con `const` no significa que esta sea inmutable, simplemente no se 
+puede reasignar.
+
+```javascript
+const person = {
+  name: 'John Doe'
+};
+
+person.name = 'Jane Doe';
+
+person = {}; // TypeError: Assignment to constant variable.
+```
+
+Declarar un objeto con `const` no significa que no podamos cambiar sus propiedades, lo que no podemos hacer es 
+asignarle un nuevo valor.
+
+---
+
+## Template Strings
+
+Las plantillas de texto o template strings, son cadenas de texto que permiten interpolación mediante expresiones. Hacen 
+mucho más fácil crear textos en los que necesitamos integrar variables o expresiones. La sintaxis consta de dos partes,
+la primera es para delimitar la cadena de texto, se usan comillas invertidas. La segunda parte es para agregar
+placeholders mediante el uso del signo de dólar y llaves.
+
+```javascript
+const msg = `Hello World!`;
+
+console.log(msg); // Hello World
+```
+## Spread operator
+
+El operador de propagación o spread operator hace más fácil trabajar con iterables como arreglos y objetos. La sintaxis
+de este operador es `...` y se coloca justo antes de la variable.
+
+### Copiar iterables
+
+Uno de los usos más comunes de este operador es duplicar arreglos. Después de declarar el nombre de la variable usamos
+corchetes para asignar un nuevo arreglo y dentro colocamos el spread operator para obtener todos los elementos del 
+arreglo que queremos copiar.
+
+```javascript
+const colors = ['blue', 'red', 'yellow'];
+const copyOfColors = [ ...colors ];
+
+console.log(copyOfColors); // ['blue', 'red', 'yellow']
+```
+
+En el caso de objetos es casi lo mismo, la única diferencia es el uso de llaves en lugar de corchetes.
+
+```javascript
+const book = {
+  author: 'Marijn Haverbeke',
+  title: 'Eloquent JavaScript',
+  year: 2018
+};
+const copyOfBook = { ...book };
+
+console.log(copyOfBook); 
+// { author: "Marijn Haverbeke", title: "Eloquent JavaScript", year: 2018 }
+```
+## Destructuring
+
+Destructuring es extraer valores o propiedades de un arreglo u objeto. 
+
+```javascript
+const colors = [ 'Red', 'Blue', 'Yellow' ]
+
+const [ red, blue, yellow ] = colors;
+
+console.log(red); // Red
+console.log(blue); // Blue
+console.log(yellow); // Yellow
+```
+
+En este ejemplo estamos creando 3 variables (`red`, `blue` y `yellow`) y asignando los valores del arreglo `colors`.
+Esta asignación se hace en base al index del arreglo.
+
+#### 💻 [Reto 1: Intercambiar variables](./Reto-01/Readme.md)
+
+```javascript
+const person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  country: 'Unknown'
+};
+
+const firstName = person.firstName;
+const lastName = person.lastName;
+
+console.log(firstName, lastName); // John Doe
+```
+
+Este es un caso muy común. En ocasiones queremos crear variables a partir de propiedades de un objeto. Podemos lograr
+lo mismo en una sola línea.
+
+```javascript
+const person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  country: 'Unknown'
+};
+
+const { firstName, lastName } = person;
+
+console.log(firstName, lastName); // John Doe
+```
+
+Las llaves del lado izquierdo del `=` no son un objeto. Esta es la sintaxis de object destructuring. Estamos creando dos
+nuevas variables `firstName` y `lastName`, después estamos extrayendo dos propiedades de `person` con el mismo nombre de
+las variables, el valor de esas propiedades es el que se asigna a las variables creadas.

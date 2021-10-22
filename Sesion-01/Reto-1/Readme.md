@@ -1,6 +1,3 @@
-[`Programación con JavaScript`](../../Readme.md) > [`Sesión 01`](../Readme.md) > `Reto 01`
-
----
 
 ## Reto 1: Custom logger
 
