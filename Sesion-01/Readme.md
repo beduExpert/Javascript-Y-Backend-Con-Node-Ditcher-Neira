@@ -2,11 +2,11 @@
 
 ---
 
-# Sesión 1: _Scope_ _,_ _This_ _y_ _ECMAScript 6_.
+# Sesión 1:  _Scope_ _,_ _This_ _y_ _ECMAScript 6_.
 
 🎯 **Objetivos:**
 
-Diferenciar scope global de local y cómo this cambia dependiendo del execution context
+Diferenciar scope global de local y cómo this cambia dependiendo del execution context, Asi como conocer las novedades de ES6 y temas mas especificos como Strings, Destructuring, Spread Operator, Arrow functions.
 
 ---
 
@@ -45,10 +45,12 @@ Diferenciar scope global de local y cómo this cambia dependiendo del execution 
   - [Ejemplo 2: ES6 Strings, Destructuring, Spread Operator. ](./Ejemplo-02/Readme.md)
 
   - [Reto 2: Intercambiar variables](./Reto-02/Readme.md)
-  
-  - [Ejemplo 3: ES6 Arrow Function. ](./Ejemplo-03/Readme.md)
 
-  - [Reto ·: Crear un número de teléfono](./Reto-03/Readme.md)
+- **[Arrow functions](#arrow-functions)** 
+  
+  - [Ejemplo 3: Arrow functions](./Ejemplo-03/Readme.md)
+
+  - [Reto 3: Crear un número de teléfono](./Reto-03/Readme.md)
 
 - **[Postwork](./Postwork/Readme.md)**
 ---
@@ -383,3 +385,11 @@ nuevas variables `firstName` y `lastName`, después estamos extrayendo dos propi
 las variables, el valor de esas propiedades es el que se asigna a las variables creadas.
 
 #### 🕵 [Ejemplo 2: ES6 Strings, Destructuring, Spread Operator. ](./Ejemplo-02/Readme.md)
+
+## Arrow functions
+
+Las funciones de flecha o arrow functions es otra de las novedades de esta versión de JavaScript. Presentan una sintaxis más concisa comparada con las funciones normales.
+
+Veamos como funcionan y cual es su sintaxis de las Arrow functions en el siguiente ejemplo :
+
+#### 🕵 [Ejemplo 3: Arrow functions ](./Ejemplo-03/Readme.md)
