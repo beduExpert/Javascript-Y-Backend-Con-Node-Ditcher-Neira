@@ -26,7 +26,7 @@ Diferenciar scope global de local y cómo this cambia dependiendo del execution 
 
 - **[Cambiar el contexto de `this`](#cambiar-el-contexto-de-this)**
 
- - [Ejemplo 1: Scope y This ](./Ejemplo-01/Readme.md)
+  - [Ejemplo 1: Scope y This ](./Ejemplo-01/Readme.md)
 
 - **[¿Qué es ECMAScript 6?](#qué-es-ecmascript-6)**
 
