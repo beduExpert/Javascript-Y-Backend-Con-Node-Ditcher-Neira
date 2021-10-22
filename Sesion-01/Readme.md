@@ -49,7 +49,6 @@ variables en áreas del código.
 
 JavaScript cuenta con dos tipos de scope: global y local. Las variables dentro de una función se 
 encuentran en un scope local, aquellas definidas fuera de una función están en un scope global.
-
 ---
 
 ## Scope global
