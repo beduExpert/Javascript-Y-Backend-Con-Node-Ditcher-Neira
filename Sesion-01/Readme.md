@@ -2,7 +2,7 @@
 
 ---
 
-# Sesión 1:  _scope_  _this_  _ECMAScript 6_
+# Sesión 1:  _Scope_  _this_  _ECMAScript 6_
 
 🎯 **Objetivos:**
 
@@ -12,8 +12,33 @@ Diferenciar scope global de local y cómo this cambia dependiendo del execution 
 
 ## 💻 Tabla de Contenidos
 
+- **[¿Qué es scope?](#qué-es-scope)**
 
+- **[Scope global](#scope-global)**
 
+- **[Scope local](#scope-local)**
+
+- **[Execution context](#execution-context)**
+
+- **[¿Cuál es el valor de `this`?](#cuál-es-el-valor-de-this)**
+
+- **[`this` en nuevas instancias](#this-en-nuevas-instancias)**
+
+- **[Cambiar el contexto de `this`](#cambiar-el-contexto-de-this)**
+
+- **[¿Qué es ECMAScript 6?](#qué-es-ecmascript-6)**
+
+- **[`let` y `const`](#let-y-const)**
+
+- **[Template strings](#template-strings)**
+
+- **[Spread operator](#spread-operator)**
+
+- **[Copiar iterables](#copiar-iterables)**
+
+- **[Destructuring](#destructuring)**
+
+- **[Postwork](./Postwork/Readme.md)**
 ---
 
 ## ¿Qué es scope?
